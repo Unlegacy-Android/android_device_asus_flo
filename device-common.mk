@@ -34,7 +34,6 @@ PRODUCT_PACKAGES := \
 	hostapd \
 	wificond \
 	wifilogd \
-	dhcpcd.conf \
 	wpa_supplicant \
 	wpa_supplicant.conf
 
