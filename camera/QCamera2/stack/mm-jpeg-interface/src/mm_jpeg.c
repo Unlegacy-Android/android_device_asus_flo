@@ -29,6 +29,7 @@
 
 #include <pthread.h>
 #include <errno.h>
+#include <stdlib.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -2148,9 +2149,9 @@ int32_t mm_jpeg_close(mm_jpeg_obj *my_obj, uint32_t client_hdl)
   return rc;
 }
 
-OMX_ERRORTYPE mm_jpeg_ebd(OMX_HANDLETYPE hComponent,
+OMX_ERRORTYPE mm_jpeg_ebd(OMX_HANDLETYPE hComponent __unused,
   OMX_PTR pAppData,
-  OMX_BUFFERHEADERTYPE *pBuffer)
+  OMX_BUFFERHEADERTYPE *pBuffer __unused)
 {
   OMX_ERRORTYPE ret = OMX_ErrorNone;
   mm_jpeg_job_session_t *p_session = (mm_jpeg_job_session_t *) pAppData;
@@ -2162,7 +2163,7 @@ OMX_ERRORTYPE mm_jpeg_ebd(OMX_HANDLETYPE hComponent,
   return 0;
 }
 
-OMX_ERRORTYPE mm_jpeg_fbd(OMX_HANDLETYPE hComponent,
+OMX_ERRORTYPE mm_jpeg_fbd(OMX_HANDLETYPE hComponent __unused,
   OMX_PTR pAppData,
   OMX_BUFFERHEADERTYPE *pBuffer)
 {
@@ -2203,12 +2204,12 @@ OMX_ERRORTYPE mm_jpeg_fbd(OMX_HANDLETYPE hComponent,
   return ret;
 }
 
-OMX_ERRORTYPE mm_jpeg_event_handler(OMX_HANDLETYPE hComponent,
+OMX_ERRORTYPE mm_jpeg_event_handler(OMX_HANDLETYPE hComponent __unused,
   OMX_PTR pAppData,
   OMX_EVENTTYPE eEvent,
-  OMX_U32 nData1,
-  OMX_U32 nData2,
-  OMX_PTR pEventData)
+  OMX_U32 nData1 __maybe_unused,
+  OMX_U32 nData2 __maybe_unused,
+  OMX_PTR pEventData __unused)
 {
   mm_jpeg_job_session_t *p_session = (mm_jpeg_job_session_t *) pAppData;
 
