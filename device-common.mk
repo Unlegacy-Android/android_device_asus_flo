@@ -77,6 +77,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.drm@1.0-impl
 
+# Sensors
+PRODUCT_PACKAGES += \
+	sensors.msm8960 \
+	android.hardware.sensors@1.0-impl
+
+PRODUCT_COPY_FILES += \
+	device/asus/flo/configs/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
+
 PRODUCT_PACKAGES += \
 	charger_res_images
 
