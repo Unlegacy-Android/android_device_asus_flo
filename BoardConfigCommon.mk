@@ -78,6 +78,8 @@ TARGET_NO_RPC := true
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
+TARGET_USES_64_BIT_BINDER := true
+
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 TARGET_NEEDS_PLATFORM_TEXTRELS := true
