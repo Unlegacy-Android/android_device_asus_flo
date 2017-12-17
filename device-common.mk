@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
 	libqcomvoiceprocessingdescriptors
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
+	device/asus/flo/audio/audio_effects.xml:system/vendor/etc/audio_effects.xml
 
 # Camera
 PRODUCT_PACKAGES += \
