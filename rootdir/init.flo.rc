@@ -369,7 +369,7 @@ service wcnss_init /system/bin/init.flo.wifi.sh
     group system wifi
     oneshot
 
-service bdAddrLoader /system/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -x
+service bdAddrLoader /vendor/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -x
     class main
     user bluetooth
     group system bluetooth
