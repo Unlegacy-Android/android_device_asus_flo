@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-ifneq ($(filter flo deb,$(TARGET_DEVICE)),)
-
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -33,6 +31,7 @@ endif
 LOCAL_SHARED_LIBRARIES := libcutils liblog
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
@@ -41,9 +40,9 @@ LOCAL_SHARED_LIBRARIES := libcutils liblog
 LOCAL_SHARED_LIBRARIES += libwfcu
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
 LOCAL_MODULE := conn_init
 LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
 
 # Make sure the symlinks get created as well.
 LOCAL_POST_INSTALL_CMD := \
@@ -54,5 +53,3 @@ LOCAL_POST_INSTALL_CMD := \
     $(TARGET_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 include $(BUILD_EXECUTABLE)
-
-endif
