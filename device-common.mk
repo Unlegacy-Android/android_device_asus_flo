@@ -225,7 +225,6 @@ PRODUCT_COPY_FILES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-	power.flo \
 	android.hardware.power@1.0-service.qcom
 
 # DRM
