@@ -128,6 +128,9 @@
 /system/bin/irsc_util              u:object_r:irsc_util_exec:s0
 /system/vendor/etc/init\.flo\.bt\.sh      u:object_r:bluetooth_loader_exec:s0
 
+# Binderized services
+/system/vendor/bin/hw/android\.hardware\.power@1\.0-service.qcom     u:object_r:hal_power_default_exec:s0
+
 # Persist firmware filesystem
 /persist(/.*)?                    u:object_r:persist_file:s0
 /persist/bluetooth(/.*)?          u:object_r:persist_bluetooth_file:s0
