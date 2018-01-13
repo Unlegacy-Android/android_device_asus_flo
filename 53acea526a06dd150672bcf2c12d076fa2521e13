@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62d8a81e_a9aae6b1",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T11:21:09Z",
+      "side": 1,
+      "message": "Actually, these two can be removed as well (msm8960 doesn\u0027t use them).",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 36
+      },
+      "revId": "53acea526a06dd150672bcf2c12d076fa2521e13",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
