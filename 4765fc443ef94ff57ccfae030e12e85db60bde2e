@@ -1,0 +1,129 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78e26c43_0e4f9d76",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "I think this space will break things, so let\u0027s don\u0027t modify this line :)",
+      "range": {
+        "startLine": 114,
+        "startChar": 34,
+        "endLine": 114,
+        "endChar": 35
+      },
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "200e1061_886e38dc",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "# OpenGL ES 3.0",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "26d17f46_66d39fb1",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "# XHDPI LCD density",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "97eb0d8f_45764367",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "# Enable DRM service",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d0b136e6_e49cb2d5",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "These won\u0027t be needed, see c/5321",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b3fa1d7b_da502c5a",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "Add a space after #",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f2e10fd7_972a9c25",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T10:28:31Z",
+      "side": 1,
+      "message": "Add:\n# ART configuration",
+      "revId": "4765fc443ef94ff57ccfae030e12e85db60bde2e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
