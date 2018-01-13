@@ -197,8 +197,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	bdAddrLoader \
 	libwfcu \
-	conn_init \
-	charger_touch
+	conn_init
 
 PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
