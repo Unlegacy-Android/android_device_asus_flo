@@ -105,33 +105,13 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
 	frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.opengles.version=196608
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sf.lcd_density=320
-
-# Audio Configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.audio.handset.mic=dmic \
-	persist.audio.fluence.mode=endfire \
-	persist.audio.lowlatency.rec=false
-
-# Camera Configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-	camera.disable_zsl_mode=1
-
 # Kickstart
 PRODUCT_PACKAGES += \
 	qcks \
 	ks \
 	efsks
 
-#Enable MDP composition by default
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.hwc.mdpcomp.enable=true
-
-PRODUCT_CHARACTERISTICS := tablet,nosdcard
+PRODUCT_CHARACTERISTICS := tablet, nosdcard
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -163,15 +143,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/flo/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
-# Monitor device rotation for speaker channel swap
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.audio.monitorRotation=true
-
 PRODUCT_COPY_FILES += \
 	device/asus/flo/bluetooth/init.flo.bt.sh:system/bin/init.flo.bt.sh
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.qualcomm.bt.hci_transport=smd
 
 PRODUCT_PACKAGES += \
 	libmmcamera_interface2 \
@@ -205,36 +179,6 @@ PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
 	p2p_supplicant_overlay.conf
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	drm.service.enabled=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	wifi.interface=wlan0
-
-# Enable AAC 5.1 output
-PRODUCT_PROPERTY_OVERRIDES += \
-	media.aac_51_output_enabled=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.qc.sensors.wl_dis=true \
-        ro.qualcomm.sensors.smd=true
-
-# Configure libhwui
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.hwui.texture_cache_size=48 \
-	ro.hwui.layer_cache_size=32 \
-	ro.hwui.r_buffer_cache_size=4 \
-	ro.hwui.path_cache_size=24 \
-	ro.hwui.gradient_cache_size=1 \
-	ro.hwui.drop_shadow_cache_size=5 \
-	ro.hwui.texture_cache_flushrate=0.5 \
-	ro.hwui.text_small_cache_width=1024 \
-	ro.hwui.text_small_cache_height=1024 \
-	ro.hwui.text_large_cache_width=2048 \
-	ro.hwui.text_large_cache_height=1024
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false
 
 PRODUCT_PACKAGES += \
     power.flo
