@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62e5b932_41baf59f",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T11:16:58Z",
+      "side": 1,
+      "message": "Remove bogus \u0027 \\\u0027",
+      "range": {
+        "startLine": 28,
+        "startChar": 59,
+        "endLine": 28,
+        "endChar": 61
+      },
+      "revId": "21ed6d83e107c4c416cc53ff7546a1702b53faed",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "437b2ce6_45e3fabf",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T11:16:58Z",
+      "side": 1,
+      "message": "Use tabs",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 4
+      },
+      "revId": "21ed6d83e107c4c416cc53ff7546a1702b53faed",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13d7be9d_d1653122",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T11:16:58Z",
+      "side": 1,
+      "message": "Use tabs",
+      "range": {
+        "startLine": 175,
+        "startChar": 0,
+        "endLine": 175,
+        "endChar": 4
+      },
+      "revId": "21ed6d83e107c4c416cc53ff7546a1702b53faed",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "975ba9be_24ea45f6",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-13T11:16:58Z",
+      "side": 1,
+      "message": "Use tabs",
+      "range": {
+        "startLine": 187,
+        "startChar": 0,
+        "endLine": 187,
+        "endChar": 4
+      },
+      "revId": "21ed6d83e107c4c416cc53ff7546a1702b53faed",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
