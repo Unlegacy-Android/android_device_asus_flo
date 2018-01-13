@@ -19,11 +19,6 @@
 #
 # Everything in this directory will become public
 
-# This device is xhdpi.  However the platform doesn't
-# currently contain all of the bitmaps at xhdpi density so
-# we do this little trick to fall back to the hdpi version
-# if the xhdpi doesn't exist.
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
@@ -125,12 +120,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
-# Audio Configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.audio.handset.mic=dmic \
-	persist.audio.fluence.mode=endfire \
-	persist.audio.lowlatency.rec=false
-
 # Camera Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
 	camera.disable_zsl_mode=1
@@ -147,14 +136,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
-PRODUCT_PACKAGES += \
-	librs_jni \
-	com.android.future.usb.accessory
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-	e2fsck \
-	setup_fs
+	e2fsck
 
 PRODUCT_PACKAGES += \
 	libgenlock \
@@ -166,7 +150,6 @@ PRODUCT_PACKAGES += \
 	memtrack.msm8960
 
 PRODUCT_PACKAGES += \
-	alsa.msm8960 \
 	audio.primary.msm8960 \
 	audio.a2dp.default \
 	audio.usb.default \
@@ -185,12 +168,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.audio.monitorRotation=true
 
-PRODUCT_PACKAGES += \
-	hci_qcomm_init
-
-PRODUCT_PACKAGES += \
-	power.msm8960
-
 PRODUCT_COPY_FILES += \
 	device/asus/flo/bluetooth/init.flo.bt.sh:system/bin/init.flo.bt.sh
 
@@ -199,12 +176,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
 	libmmcamera_interface2 \
-	libmmcamera_interface \
-	libqomx_core
+	libmmcamera_interface
 
 PRODUCT_PACKAGES += \
-	mm-vdec-omx-test \
-	mm-venc-omx-test720p \
 	libdivxdrmdecrypt \
 	libOmxVdec \
 	libOmxVenc \
@@ -214,17 +188,11 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-        libloc_adapter \
-        libloc_eng \
-        libloc_api_v02 \
-        libloc_ds_api \
-        libloc_core \
-        libizat_core \
-        libgeofence \
-        libgps.utils \
-        gps.conf \
-        gps.msm8960 \
-        flp.msm8960
+    libloc_eng \
+    libloc_core \
+    libgps.utils \
+    gps.conf \
+    gps.msm8960
 
 PRODUCT_PACKAGES += \
 	bdAddrLoader \
@@ -245,9 +213,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
 	media.aac_51_output_enabled=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-        debug.egl.recordable.rgba8888=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.qc.sensors.wl_dis=true \
@@ -275,8 +240,6 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
     NfcNci \
     Tag
 
