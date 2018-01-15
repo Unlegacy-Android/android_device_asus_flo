@@ -23,6 +23,7 @@ persist.hwc.mdpcomp.enable=true
 ro.audio.monitorRotation=true
 
 # Connections
+ro.carrier=wifi-only
 ro.qualcomm.bt.hci_transport=smd
 wifi.interface=wlan0
 
