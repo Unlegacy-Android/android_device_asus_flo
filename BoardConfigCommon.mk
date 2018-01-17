@@ -86,4 +86,6 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
+DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
+
 TARGET_NEEDS_PLATFORM_TEXTRELS := true
