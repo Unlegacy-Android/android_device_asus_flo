@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f9aeab5_0f5f55f0",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-20T22:02:08Z",
+      "side": 1,
+      "message": "flo needs 3.2 here",
+      "range": {
+        "startLine": 198,
+        "startChar": 15,
+        "endLine": 198,
+        "endChar": 18
+      },
+      "revId": "3676e290eaa67e2c330b45969afff1102bfe7e6b",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
