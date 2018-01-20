@@ -186,6 +186,10 @@ PRODUCT_PACKAGES += \
 	NfcNci \
 	Tag
 
+# Sensors HAL
+PRODUCT_PACKAGES += \
+	sensors.msm8960
+
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
 	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
