@@ -29,8 +29,10 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi & Bluetooth
 PRODUCT_PACKAGES := \
+	android.hardware.wifi@1.0-service \
 	libwpa_client \
 	hostapd \
+    wificond \
 	dhcpcd.conf \
 	wpa_supplicant \
 	wpa_supplicant.conf
@@ -51,12 +53,24 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/wifi/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
 	device/asus/flo/wifi/init.flo.wifi.sh:system/bin/init.flo.wifi.sh
 
+# Bluetooth HAL
+PRODUCT_PACKAGES += \
+	android.hardware.bluetooth@1.0-impl \
+	android.hardware.bluetooth@1.0-service \
+	libbt-vendor
+
 PRODUCT_COPY_FILES += \
 	device/asus/flo/bluetooth/init.flo.bt.sh:system/bin/init.flo.bt.sh
 
 # Lights
 PRODUCT_PACKAGES += \
-	lights.msm8960
+	lights.msm8960 \
+	android.hardware.light@2.0-impl \
+	android.hardware.light@2.0-service
+
+# USB
+PRODUCT_PACKAGES += \
+	android.hardware.usb@1.0-service
 
 PRODUCT_PACKAGES += \
 	charger_res_images
@@ -133,8 +147,23 @@ PRODUCT_PACKAGES += \
 	hwcomposer.msm8960 \
 	gralloc.msm8960 \
 	copybit.msm8960 \
+	android.hardware.graphics.allocator@2.0-impl \
+	android.hardware.graphics.allocator@2.0-service \
+	android.hardware.graphics.composer@2.1-impl \
+	android.hardware.graphics.composer@2.1-service \
+	android.hardware.graphics.mapper@2.0-impl
+
+# Keystore HAL
+PRODUCT_PACKAGES += \
 	keystore.msm8960 \
-	memtrack.msm8960
+	android.hardware.keymaster@3.0-impl \
+	android.hardware.keymaster@3.0-service
+
+# Memtrack HAL
+PRODUCT_PACKAGES += \
+	memtrack.msm8960 \
+	android.hardware.memtrack@1.0-impl \
+	android.hardware.memtrack@1.0-service
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -142,6 +171,9 @@ PRODUCT_PACKAGES += \
 	audio.a2dp.default \
 	audio.usb.default \
 	audio.r_submix.default \
+	android.hardware.audio@2.0-impl \
+	android.hardware.audio@2.0-service \
+	android.hardware.audio.effect@2.0-impl \
 	libaudio-resampler
 
 PRODUCT_COPY_FILES += \
@@ -158,8 +190,12 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+	camera.flo \
 	libmmcamera_interface2 \
-	libmmcamera_interface
+	libmmcamera_interface \
+	android.hardware.camera.provider@2.4-impl \
+	android.hardware.camera.provider@2.4-service \
+	camera.device@1.0-impl
 
 PRODUCT_PACKAGES += \
 	libdivxdrmdecrypt \
@@ -174,8 +210,9 @@ PRODUCT_PACKAGES += \
 	libloc_eng \
 	libloc_core \
 	libgps.utils \
-	gps.conf \
-	gps.msm8960
+	gps.msm8960 \
+	android.hardware.gnss@1.0-impl \
+	android.hardware.gnss@1.0-service
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/configs/sec_config:system/etc/sec_config
@@ -183,16 +220,27 @@ PRODUCT_COPY_FILES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-	power.flo
+	power.flo \
+	android.hardware.power@1.0-service.qcom
 
-# NFC packages
+# DRM
 PRODUCT_PACKAGES += \
-	NfcNci \
-	Tag
+	android.hardware.drm@1.0-impl \
+	android.hardware.drm@1.0-service
 
 # Sensors HAL
 PRODUCT_PACKAGES += \
-	sensors.msm8960
+	sensors.msm8960 \
+	android.hardware.sensors@1.0-impl \
+	android.hardware.sensors@1.0-service
+
+# NFC packages
+PRODUCT_PACKAGES += \
+	nfc_nci.bcm2079x.default \
+	android.hardware.nfc@1.0-impl \
+	android.hardware.nfc@1.0-service \
+	NfcNci \
+	Tag
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
