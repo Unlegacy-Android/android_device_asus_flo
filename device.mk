@@ -26,13 +26,6 @@ PRODUCT_COPY_FILES := \
     device/asus/flo/rootdir/fstab.flo:root/fstab.flo \
     device/asus/flo/rootdir/init.flo.rc:root/init.flo.rc
 
-PRODUCT_PACKAGES += \
-    camera.flo
-
-# NFC
-PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.default
-
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
 
