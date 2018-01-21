@@ -20,5 +20,7 @@ TARGET_BOARD_INFO_FILE := device/asus/flo/board-info.txt
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/rootdir/fstab.flo
 
+DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
+
 -include vendor/asus/flo/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
