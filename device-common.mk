@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/configs/thermald-flo.conf:system/etc/thermald.conf
 
+PRODUCT_COPY_FILES += \
+	device/asus/flo/configs/DxHDCP.cfg:system/etc/DxHDCP.cfg
+
 # Media
 PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -175,7 +178,8 @@ PRODUCT_PACKAGES += \
 	gps.msm8960
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/configs/sec_config:system/etc/sec_config
+	device/asus/flo/configs/sec_config:system/etc/sec_config \
+	device/asus/flo/configs/gps.conf:system/etc/gps.conf
 
 # Power HAL
 PRODUCT_PACKAGES += \
