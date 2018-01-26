@@ -2,4 +2,4 @@
 qmux_socket(audioserver)
 
 # Grant socket creation to audioserver
-allow audioserver self:socket create_socket_perms;
+allow audioserver self:socket create_socket_perms_no_ioctl;
