@@ -31,6 +31,11 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     Launcher3
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=razor \
+    BUILD_FINGERPRINT=google/razor/flo:6.0.1/MOB30X/3036618:user/release-keys \
+    PRIVATE_BUILD_DESC="razor-user 6.0.1 MOB30X 3036618 release-keys"
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/asus/flo/device.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/device-vendor.mk)
