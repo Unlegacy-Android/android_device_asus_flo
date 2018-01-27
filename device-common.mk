@@ -37,20 +37,18 @@ PRODUCT_PACKAGES := \
 	wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-	wpa_supplicant_overlay.conf \
-	p2p_supplicant_overlay.conf
-
-PRODUCT_PACKAGES += \
 	bdAddrLoader \
 	libwfcu \
 	conn_init
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-	device/asus/flo/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-	device/asus/flo/wifi/WCNSS_qcom_wlan_nv_flo.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
-	device/asus/flo/wifi/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
-	device/asus/flo/wifi/init.flo.wifi.sh:system/bin/init.flo.wifi.sh
+	device/asus/flo/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
+	device/asus/flo/wifi/WCNSS_qcom_wlan_nv_flo.bin:system/vendor/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
+	device/asus/flo/wifi/WCNSS_qcom_wlan_nv_deb.bin:system/vendor/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
+	device/asus/flo/wifi/init.flo.wifi.sh:system/vendor/etc/init.flo.wifi.sh \
+	device/asus/flo/wifi/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf \
+	device/asus/flo/wifi/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf
 
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
@@ -59,7 +57,7 @@ PRODUCT_PACKAGES += \
 	libbt-vendor
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/bluetooth/init.flo.bt.sh:system/bin/init.flo.bt.sh
+	device/asus/flo/bluetooth/init.flo.bt.sh:system/vendor/etc/init.flo.bt.sh
 
 # Lights
 PRODUCT_PACKAGES += \
