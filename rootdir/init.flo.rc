@@ -44,7 +44,7 @@ on boot
     chmod 2770 /dev/socket/qmux_radio
     mkdir /dev/socket/qmux_audio 0770 media audio
     chmod 2770 /dev/socket/qmux_audio
-    mkdir /dev/socket/qmux_bluetooth 0770 bluetooth net_bt_stack
+    mkdir /dev/socket/qmux_bluetooth 0770 bluetooth
     chmod 2770 /dev/socket/qmux_bluetooth
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
@@ -273,7 +273,7 @@ service rmt_storage /system/bin/rmt_storage
 service hciattach /system/bin/init.flo.bt.sh
     class late_start
     user bluetooth
-    group qcom_oncrpc bluetooth net_bt_admin system net_bt_stack
+    group qcom_oncrpc bluetooth system
     disabled
     oneshot
 
@@ -287,7 +287,7 @@ on property:bluetooth.hciattach=false
 service qmuxd /system/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth gps net_bt_stack
+    group radio audio bluetooth gps
     disabled
 
 service ks_checker /system/bin/kickstart_checker.sh
@@ -382,7 +382,7 @@ service wcnss_init /system/bin/init.flo.wifi.sh
 service bdAddrLoader /system/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -x
     class main
     user bluetooth
-    group system bluetooth net_bt_stack
+    group system bluetooth
     oneshot
 
 # bugreport is triggered by holding down volume down, volume up and power
