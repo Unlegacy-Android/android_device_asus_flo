@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bbdbf9ef_f6d38f5c",
+        "filename": "device-common.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-27T16:44:25Z",
+      "side": 0,
+      "message": "Where does this go? If we don\u0027t need it anymore, remove it in a separate commit :)",
+      "range": {
+        "startLine": 177,
+        "startChar": 1,
+        "endLine": 177,
+        "endChar": 9
+      },
+      "revId": "03b88e3d5b7d735ef4178fd123a463d727f1de21",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
