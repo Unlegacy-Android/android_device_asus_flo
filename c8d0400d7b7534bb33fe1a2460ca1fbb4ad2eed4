@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "05cd1ed0_8dcd6c4f",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-27T16:15:09Z",
+      "side": 1,
+      "message": "wificond is a separate thing; please add it in a separate commit :)",
+      "range": {
+        "startLine": 35,
+        "startChar": 1,
+        "endLine": 35,
+        "endChar": 9
+      },
+      "revId": "c8d0400d7b7534bb33fe1a2460ca1fbb4ad2eed4",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aba91a97_89d362b9",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-27T16:15:09Z",
+      "side": 1,
+      "message": "I think this should stay in \"device.mk\", as deb needs \"camera.deb\".",
+      "range": {
+        "startLine": 193,
+        "startChar": 1,
+        "endLine": 193,
+        "endChar": 13
+      },
+      "revId": "c8d0400d7b7534bb33fe1a2460ca1fbb4ad2eed4",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
