@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "380d4d39_8ca6e3eb",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-01-28T22:21:00Z",
+      "side": 1,
+      "message": "the group is bluetooth instead of nothing :) see: https://github.com/Unlegacy-Android/android_device_lge_mako/blob/aosp-8.1/rootdir/init.mako.rc#L55",
+      "revId": "55f625c0c29b7b2c589d52a5a1416cef0399746b",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
