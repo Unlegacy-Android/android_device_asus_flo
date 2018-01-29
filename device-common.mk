@@ -219,7 +219,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.gnss@1.0-service
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/configs/sec_config:system/etc/sec_config
+	device/asus/flo/configs/sec_config:system/etc/sec_config \
 	device/asus/flo/configs/gps.conf:system/etc/gps.conf
 
 # Power HAL
