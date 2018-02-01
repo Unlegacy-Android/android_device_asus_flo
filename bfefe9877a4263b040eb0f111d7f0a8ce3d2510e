@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c57c8fd_09eb9d1f",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-01T19:04:17Z",
+      "side": 1,
+      "message": "We shouldn\u0027t need to add seclabel here - should be taken care of in file_contexts.",
+      "revId": "bfefe9877a4263b040eb0f111d7f0a8ce3d2510e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83f0565d_9e96a86f",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 371,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-01T19:04:17Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "bfefe9877a4263b040eb0f111d7f0a8ce3d2510e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
