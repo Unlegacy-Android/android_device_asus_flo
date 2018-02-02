@@ -293,10 +293,6 @@ service qmuxd /system/bin/qmuxd
     group radio audio bluetooth gps
     disabled
 
-service ks_checker /system/bin/kickstart_checker.sh
-    class core
-    oneshot
-
 service kickstart /system/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
     class core
     user system

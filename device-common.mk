@@ -133,9 +133,6 @@ PRODUCT_PACKAGES += \
 	ks \
 	efsks
 
-PRODUCT_COPY_FILES += \
-	device/asus/flo/kickstart_checker.sh:system/bin/kickstart_checker.sh
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
 	e2fsck
