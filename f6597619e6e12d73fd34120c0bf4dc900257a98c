@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30f4ad5d_bc06b4c0",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-03T20:00:31Z",
+      "side": 1,
+      "message": "You should just call /vendor/etc/init.flo.wifi.sh directly.",
+      "range": {
+        "startLine": 366,
+        "startChar": 19,
+        "endLine": 366,
+        "endChar": 62
+      },
+      "revId": "f6597619e6e12d73fd34120c0bf4dc900257a98c",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
