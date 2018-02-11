@@ -39,19 +39,6 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
-    #Create QMUX deamon socket area
-    mkdir /dev/socket/qmux_radio 0770 radio radio
-    chmod 2770 /dev/socket/qmux_radio
-    mkdir /dev/socket/qmux_audio 0770 media audio
-    chmod 2770 /dev/socket/qmux_audio
-    mkdir /dev/socket/qmux_bluetooth 0770 bluetooth bluetooth
-    chmod 2770 /dev/socket/qmux_bluetooth
-    mkdir /dev/socket/qmux_gps 0770 gps gps
-    chmod 2770 /dev/socket/qmux_gps
-
-    # Allow QMUX daemon to assign port open wait time
-    chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
-
     #port-bridge
     chmod 0660 /dev/smd0
     chown system system /dev/smd0
@@ -285,39 +272,6 @@ on property:bluetooth.hciattach=true
 
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
-
-# QMUX must be in multiple groups to support external process connections
-service qmuxd /system/bin/qmuxd
-    class main
-    user radio
-    group radio audio bluetooth gps
-    disabled
-
-service ks_checker /system/bin/kickstart_checker.sh
-    class core
-    oneshot
-
-service kickstart /system/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
-    class core
-    user system
-    group system
-    disabled
-    oneshot
-
-on property:gsm.radio.kickstart=on
-    start kickstart
-
-on property:gsm.radio.kickstart=off
-    stop kickstart
-
-on property:ril.asus_debugger_running=1
-    start asus-dbug-d
-
-service netmgrd /system/bin/netmgrd
-    class main
-    group radio
-    disabled
-
 
 service sensors /system/bin/sensors.qcom
     class late_start

@@ -126,15 +126,6 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
 	frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml
 
-# Kickstart
-PRODUCT_PACKAGES += \
-	qcks \
-	ks \
-	efsks
-
-PRODUCT_COPY_FILES += \
-	device/asus/flo/kickstart_checker.sh:system/bin/kickstart_checker.sh
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
 	e2fsck
