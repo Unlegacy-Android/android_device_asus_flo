@@ -258,12 +258,12 @@ on charger
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 384000
 
 
-service irsc_util /system/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot
 
-service rmt_storage /system/bin/rmt_storage
+service rmt_storage /vendor/bin/rmt_storage
     class main
     user root
     group system
@@ -281,7 +281,7 @@ on property:bluetooth.hciattach=true
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
-service sensors /system/bin/sensors.qcom
+service sensors /vendor/bin/sensors.qcom
     class late_start
     user root
     group root
@@ -311,16 +311,16 @@ service charger /charger
     critical
     seclabel u:r:charger:s0
 
-service thermald /system/bin/thermald
+service thermald /vendor/bin/thermald
     class main
     group radio system
 
-service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+service mpdecision /vendor/bin/mpdecision --no_sleep --avg_comp
     class main
     user root
     group root readproc system
 
-service qcamerasvr /system/bin/mm-qcamera-daemon
+service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input
@@ -345,7 +345,7 @@ service bugreport /system/bin/dumpstate -d -p -B \
     oneshot
     keycodes 114 115 116
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
     class late_start
     user system
     group system
