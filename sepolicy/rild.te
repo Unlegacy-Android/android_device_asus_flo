@@ -1,5 +1,3 @@
-qmux_socket(rild)
-
 # whitelist qualcomm specific ioctls
 allow rild self:socket ioctl;
 allowxperm rild self:socket ioctl msm_sock_ipc_ioctls;
