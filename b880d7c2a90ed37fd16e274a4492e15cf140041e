@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "86a654e5_25d45795",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-12T22:57:00Z",
+      "side": 1,
+      "message": "Shouldn\u0027t be needed (L226 takes care of it)",
+      "revId": "b880d7c2a90ed37fd16e274a4492e15cf140041e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2deacd71_c65ce5f7",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-12T22:57:00Z",
+      "side": 1,
+      "message": "Shouldn\u0027t be needed (L226 takes care of it)",
+      "revId": "b880d7c2a90ed37fd16e274a4492e15cf140041e",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
