@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "074796a2_277fa127",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T11:08:55Z",
+      "side": 1,
+      "message": "No need to duplicate this, as we\u0027re already in this block here (see the third line above).",
+      "revId": "d0f98b42f5e822dce4ec94891e7d6c654ca8e7b0",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
