@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5cbd1724_c10bedd2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 1,
+      "message": "I\u0027d prefer something like \"Remove modem support\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 25
+      },
+      "revId": "7194ef5e50076afff8e2629ec4b4118ccfae5028",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17c4fb59_f352bfba",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 9
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 1,
+      "message": "add a dot to the end :)",
+      "range": {
+        "startLine": 9,
+        "startChar": 65,
+        "endLine": 9,
+        "endChar": 66
+      },
+      "revId": "7194ef5e50076afff8e2629ec4b4118ccfae5028",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "013128e9_66dc13b8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 9
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 1,
+      "message": "\"a modem\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 17,
+        "endLine": 9,
+        "endChar": 27
+      },
+      "revId": "7194ef5e50076afff8e2629ec4b4118ccfae5028",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a3d776c_209a8e69",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 9
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 1,
+      "message": "I think wifi only devices don\u0027t have a vibrator.",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 49
+      },
+      "revId": "7194ef5e50076afff8e2629ec4b4118ccfae5028",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "decb42cb_cc022cb1",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 9
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 1,
+      "message": "Do we need this without a modem?",
+      "range": {
+        "startLine": 252,
+        "startChar": 8,
+        "endLine": 252,
+        "endChar": 19
+      },
+      "revId": "7194ef5e50076afff8e2629ec4b4118ccfae5028",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84d4e963_b90d7809",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-13T20:49:09Z",
+      "side": 0,
+      "message": "Do we need any rild policy?",
+      "revId": "766972f7d3dc6b7d383b5abbf21657c41435c679",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
