@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7d54e0be_be4bddf0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-14T19:41:56Z",
+      "side": 1,
+      "message": "Since we don\u0027t switch to BFQ in this commit (we switched to it long time ago), this part should be removed.",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 49
+      },
+      "revId": "8c9e8217fb704201d671dfa77fa0f4c17c81147a",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
