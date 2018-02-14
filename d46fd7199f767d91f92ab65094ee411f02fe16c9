@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf89d84a_b46d643a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-02-14T19:42:22Z",
+      "side": 1,
+      "message": "Prefix the title with \"init:\"",
+      "revId": "d46fd7199f767d91f92ab65094ee411f02fe16c9",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
