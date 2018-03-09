@@ -16,9 +16,6 @@ allowxperm thermald self:socket ioctl msm_sock_ipc_ioctls;
 allow thermald self:netlink_kobject_uevent_socket { create setopt bind read };
 allow thermald self:capability net_admin;
 
-# Talk to qmuxd (/dev/socket/qmux_radio)
-qmux_socket(thermald)
-
 # Access shared logger (/dev/smem_log)
 allow thermald shared_log_device:chr_file rw_file_perms;
 
