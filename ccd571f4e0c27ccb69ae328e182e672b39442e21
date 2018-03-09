@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "360759c8_562d5c78",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 14
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-03-09T13:39:54Z",
+      "side": 1,
+      "message": "If these modifications are needed, they should be applied in a separate commit.",
+      "revId": "ccd571f4e0c27ccb69ae328e182e672b39442e21",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9594b39d_c1235eb2",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 14
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-03-09T13:39:54Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "ccd571f4e0c27ccb69ae328e182e672b39442e21",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1f34b78_2fde5dd3",
+        "filename": "rootdir/init.flo.rc",
+        "patchSetId": 14
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-03-09T13:39:54Z",
+      "side": 1,
+      "message": "And here :)",
+      "revId": "ccd571f4e0c27ccb69ae328e182e672b39442e21",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
