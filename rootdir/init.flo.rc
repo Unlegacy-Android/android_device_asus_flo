@@ -41,19 +41,6 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
-    #Create QMUX deamon socket area
-    mkdir /dev/socket/qmux_radio 0770 radio radio
-    chmod 2770 /dev/socket/qmux_radio
-    mkdir /dev/socket/qmux_audio 0770 media audio
-    chmod 2770 /dev/socket/qmux_audio
-    mkdir /dev/socket/qmux_bluetooth 0770 bluetooth bluetooth
-    chmod 2770 /dev/socket/qmux_bluetooth
-    mkdir /dev/socket/qmux_gps 0770 gps gps
-    chmod 2770 /dev/socket/qmux_gps
-
-    # Allow QMUX daemon to assign port open wait time
-    chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
-
     #port-bridge
     chmod 0660 /dev/smd0
     chown system system /dev/smd0
@@ -120,11 +107,9 @@ on post-fs-data
     chown system system /dev/wcnss_wlan
     write /sys/module/wcnss_ssr_8960/parameters/enable_riva_ssr 1
 
-    mkdir /tombstones/modem 0771 system system
     mkdir /tombstones/lpass 0771 system system
     mkdir /tombstones/wcnss 0771 system system
     mkdir /tombstones/dsps 0771 system system
-    mkdir /tombstones/mdm 0771 system system
 
 # to observe dnsmasq.leases file for dhcp information of soft ap.
     chown dhcp system /data/misc/dhcp
@@ -182,10 +167,6 @@ on post-fs-data
     mkdir /data/audio 0770 media audio
     chmod 2770 /data/audio
 
-    # kickstart
-    mkdir /data/qcks 0770 system system
-    chown system /dev/block/platform/msm_sdcc.1/by-name
-
     setprop vold.post_fs_data_done 1
 
     rm /data/local/tmp/adreno_config.txt
@@ -199,9 +180,6 @@ on post-fs-data
 
     # communicate with mpdecision and thermald
     mkdir /dev/socket/mpdecision 2770 root system
-
-    # adjust vibrator amplitude
-    write /sys/class/timed_output/vibrator/amp 70
 
     # Enable Power modes and set the CPU Freq Sampling rates
     write /sys/module/rpm_resources/enable_low_power/L2_cache 1
@@ -272,9 +250,9 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     oneshot
 
 service rmt_storage /vendor/bin/rmt_storage
-    class main
+    class core
     user root
-    group system
+    group system wakelock
 
 service hciattach /vendor/bin/init.flo.bt.sh
     class late_start
@@ -289,43 +267,10 @@ on property:bluetooth.hciattach=true
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
-# QMUX must be in multiple groups to support external process connections
-service qmuxd /vendor/bin/qmuxd
-    class main
-    user radio
-    group radio audio bluetooth gps
-    disabled
-
-service ks_checker /system/bin/kickstart_checker.sh
-    class core
-    oneshot
-
-service kickstart /vendor/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
-    class core
-    user system
-    group system
-    disabled
-    oneshot
-
-on property:gsm.radio.kickstart=on
-    start kickstart
-
-on property:gsm.radio.kickstart=off
-    stop kickstart
-
-on property:ril.asus_debugger_running=1
-    start asus-dbug-d
-
-service netmgrd /vendor/bin/netmgrd
-    class main
-    group radio
-    disabled
-
-
 service sensors /vendor/bin/sensors.qcom
     class late_start
     user root
-    group root
+    group root radio system wakelock
 
 service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
     -ip2p0 -Dnl80211 -c/data/misc/wifi/p2p_supplicant.conf \
@@ -387,14 +332,6 @@ service bugreport /system/bin/dumpstate -d -p -B \
     keycodes 114 115 116
 
 service qseecomd /vendor/bin/qseecomd
-    class late_start
-    user system
-    group system
-
-on property:ro.boot.baseband=mdm
-    start qmuxd
-    start netmgrd
-
-on property:ro.boot.baseband=apq
-    setprop ro.radio.noril yes
-    stop ril-daemon
+    class core
+    user root
+    group root
