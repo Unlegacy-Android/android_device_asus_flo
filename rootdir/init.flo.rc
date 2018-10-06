@@ -21,6 +21,8 @@ on early-init
     chown system system /sys/kernel/debug/kgsl/proc
     symlink /data/tombstones /tombstones
 
+    mount_all ./fstab.mako --early
+
 on init
     # Set permissions for persist partition
     mkdir /persist 0771 system system
@@ -32,7 +34,7 @@ on init
     write /sys/block/mmcblk0/queue/scheduler noop
 
 on fs
-    mount_all ./fstab.flo
+    mount_all ./fstab.flo --late
     restorecon_recursive /persist
     write /sys/kernel/boot_adsp/boot 1
 
