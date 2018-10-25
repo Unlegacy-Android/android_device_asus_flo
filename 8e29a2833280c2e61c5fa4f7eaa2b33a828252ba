@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a5844518_df4ad3fe",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2018-10-25T08:47:03Z",
+      "side": 1,
+      "message": "On my device, it\u0027s 13342063616 - can you double-check it on an untouched device that never seen parted?\n\nThe rest are correct.",
+      "range": {
+        "startLine": 71,
+        "startChar": 38,
+        "endLine": 71,
+        "endChar": 49
+      },
+      "revId": "8e29a2833280c2e61c5fa4f7eaa2b33a828252ba",
+      "serverId": "d5e41ece-075f-43fb-b5a6-48951f3d7b1d",
+      "unresolved": false
+    }
+  ]
+}
