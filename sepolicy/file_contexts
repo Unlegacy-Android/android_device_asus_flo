@@ -75,7 +75,7 @@
 
 /dev/cpu_dma_latency                   u:object_r:power_control_device:s0
 
-/data/cam_socket[0-9]                  u:object_r:camera_socket:s0
+/dev/socket/qcamera(/.*)?              u:object_r:camera_socket:s0
 /dev/socket/sensors(/.*)?              u:object_r:sensors_socket:s0
 
 /data/nfc(/.*)?                        u:object_r:nfc_data_file:s0
