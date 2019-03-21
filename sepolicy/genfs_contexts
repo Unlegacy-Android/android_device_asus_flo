@@ -1,3 +1,6 @@
+genfscon proc /cpu/alignment                                                     u:object_r:proc_cpu_alignment:s0
+genfscon proc /slabinfo                                                          u:object_r:proc_slabinfo:s0
+
 # mpdecision
 genfscon sysfs /module/pm_8x60/modes                                             u:object_r:sysfs_mpdecision:s0
 
@@ -18,4 +21,8 @@ genfscon sysfs /module/msm_thermal                                              
 genfscon sysfs /devices/platform/msm_fb.591617/leds/lcd-backlight                u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-led               u:object_r:sysfs_leds:s0
 
+# Block devices
+genfscon sysfs /devices/virtual/bdi/179:0/read_ahead_kb                          u:object_r:sysfs_block_read_ahead_kb:s0
+
 genfscon sysfs /devices/system/soc/soc0                                          u:object_r:sysfs_soc:s0
+genfscon sysfs /module/wcnss_ssr_8960/parameters/enable_riva_ssr                 u:object_r:sysfs_msm_subsys:s0
