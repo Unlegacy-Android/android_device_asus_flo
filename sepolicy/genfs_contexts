@@ -24,6 +24,9 @@ genfscon sysfs /module/msm_thermal                                              
 genfscon sysfs /devices/platform/msm_fb.591617/leds/lcd-backlight                u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-led               u:object_r:sysfs_leds:s0
 
+# Power supplies
+genfscon sysfs /devices/i2c-0/0-0055/power_supply                                u:object_r:sysfs_batteryinfo:s0
+
 # Block devices
 genfscon sysfs /devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/scheduler          u:object_r:sysfs_block_iosched:s0
 genfscon sysfs /devices/virtual/bdi/179:0/read_ahead_kb                          u:object_r:sysfs_block_read_ahead_kb:s0
