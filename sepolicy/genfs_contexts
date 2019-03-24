@@ -32,6 +32,7 @@ genfscon sysfs /devices/i2c-0/0-0055/power_supply                               
 genfscon sysfs /devices/platform/msm_hsusb/gadget/lun0/                          u:object_r:sysfs_android_usb:s0
 
 # block devices
+genfscon sysfs /devices/platform/msm_sdcc.1/mmc_host/mmc0                        u:object_r:sysfs_disk_stat:s0
 genfscon sysfs /devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/scheduler          u:object_r:sysfs_block_iosched:s0
 genfscon sysfs /devices/virtual/bdi/179:0/read_ahead_kb                          u:object_r:sysfs_block_read_ahead_kb:s0
 
