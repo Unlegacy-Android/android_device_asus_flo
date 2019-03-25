@@ -32,5 +32,4 @@ allow rmt uio_device:chr_file rw_file_perms;
 set_prop(rmt, ctl_rmt_prop)
 
 # Access to sysfs
-allow rmt sysfs:file { open append read getattr write };
-allow rmt sysfs:dir rw_dir_perms;
+r_dir_file(rmt, sysfs_rmt_storage)
